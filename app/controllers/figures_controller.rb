@@ -18,7 +18,10 @@ class FiguresController < ApplicationController
       @figure.landmarks << Landmark.create(params[:landmark])
       @figure.save
     end
+  end
 
+  get '/figures' do
+    erb :show
   end
 
 end

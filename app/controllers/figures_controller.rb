@@ -23,6 +23,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures' do
+    @figures = Figure.all
     erb :"figures/show"
   end
 

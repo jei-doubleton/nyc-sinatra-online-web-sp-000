@@ -5,5 +5,7 @@
   <% @titles.each do |title| %>
     <p><input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>"><%= title.name %></input></p>
   <% end %>
+  <h2>Create New Title:</h2>
+  <input type="text" name="figure[title]" id="figure_title">
 
 </form>

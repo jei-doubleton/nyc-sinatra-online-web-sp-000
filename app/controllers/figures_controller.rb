@@ -7,7 +7,7 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    Figure.create(params[figure])
+    @figure = Figure.create(params[figure])
   end
 
 end

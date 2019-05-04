@@ -18,7 +18,7 @@ class FiguresController < ApplicationController
       @figure.landmark = Landmark.create(params[:landmark])
       @figure.save
     end
-    
+
   end
 
 end

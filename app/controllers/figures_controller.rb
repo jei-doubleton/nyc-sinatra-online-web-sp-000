@@ -40,7 +40,8 @@ class FiguresController < ApplicationController
   end
 
   post '/figures/:id' do
-
+    @figure = Figure.find_by(params[:id])
+    @figure.update(params[:figure])
   end
 
 end

@@ -18,10 +18,12 @@ class FiguresController < ApplicationController
       @figure.landmarks << Landmark.create(params[:landmark])
       @figure.save
     end
+
+    redirect "/figures"
   end
 
   get '/figures' do
-    erb :show
+    erb :"figures/show"
   end
 
 end

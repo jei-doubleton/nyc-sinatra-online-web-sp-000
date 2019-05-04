@@ -9,6 +9,8 @@ class LandmarksController < ApplicationController
     redirect "/landmarks/#{@landmark.id}"
   end
 
-  get /
+  get '/landmarks' do
+    @landmarks = Landmark.all
+  end
 
 end

@@ -1,6 +1,6 @@
 class FiguresController < ApplicationController
 
-  get '/new' do
+  get '/figures/new' do
     erb :"figures/new"
   end
 

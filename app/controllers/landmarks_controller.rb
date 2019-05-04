@@ -25,7 +25,8 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
-    Landmark.findy_by(params[:id]).update(params[:landmark])
+    @landmark = Landmark.findy_by(params[:id])
+    @landmark.update(params[:landmark])
   end
 
 end

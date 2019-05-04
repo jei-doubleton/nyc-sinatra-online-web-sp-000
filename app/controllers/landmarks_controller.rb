@@ -24,4 +24,8 @@ class LandmarksController < ApplicationController
     erb :"landmarks/edit"
   end
 
+  patch '/landmarks/:id' do
+    
+  end
+
 end

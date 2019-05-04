@@ -8,7 +8,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[figure])
-    if !
+    if !params([title][name])
   end
 
 end

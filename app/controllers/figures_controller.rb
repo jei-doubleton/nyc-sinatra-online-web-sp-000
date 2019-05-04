@@ -24,7 +24,7 @@ class FiguresController < ApplicationController
 
   get '/figures' do
     @figures = Figure.all
-    erb :"figures/show"
+    erb :"figures/index"
   end
 
   get '/figures/:id' do
